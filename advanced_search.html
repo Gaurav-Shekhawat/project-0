@@ -5,28 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Search</title>
+    <link rel="stylesheet" href="./styling/advanced_search.css" />
   </head>
   <body>
-    <nav>
-      <a href="./index.html"></a>
-    </nav>
-
-    <div class="container">
-      <img src="./images/google_search.png" />
-      <div class="info_about_form">
-        <p>all these words:</p>
-        <p>this exact word or phrase:</p>
-        <p>any of these words:</p>
-        <p>none of these words:</p>
+    <header>
+      <p>Advanced Search</p>
+      <div class="links">
+        <a href="./index.html">Search</a>
       </div>
-      <form action="https://www.google.com/search">
-        <input type="text" name="as_q" /> <br />
-        <input type="text" name="as_epq" /><br />
-        <input type="text" name="as_oq" /><br />
-        <input type="text" name="as_eq" /><br />
+    </header>
 
-        <input type="submit" value="Advanced Search" />
-      </form>
+    <div class="outer-container">
+      <div class="container">
+        <form action="https://www.google.com/search">
+          <div class="block">
+            <p>all these words:</p>
+            <input type="text" name="as_q" />
+          </div>
+
+          <div class="block">
+            <p>this exact word or phrase:</p>
+            <input type="text" name="as_epq" />
+          </div>
+
+          <div class="block">
+            <p>any of these words:</p>
+            <input type="text" name="as_oq" />
+          </div>
+
+          <div class="block">
+            <p>none of these words:</p>
+            <input type="text" name="as_eq" />
+          </div>
+
+          <input type="submit" value="Advanced Search" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
