@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  height: 5vh;
+  .links {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    a {
+      padding-left: 30px;
+      text-decoration: none;
+      color: #555;
+      font-size: 18px;
+      font-weight: 530;
+    }
+  }
+}
+
+.outer-container {
+  position:relative;
+  height: 95vh;
+}
+
+.container {
+    position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 320px;
+  }
+
+  #main-input {
+    width: 600px;
+    height: 45px;
+    border-radius: 2rem;
+    border: 0.4px solid rgb(189, 189, 189);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      // background: url("../images/search__magnifying_glass.jpg");
+      background-color: red;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+      border: none;
+    }
+
+    &:focus-visible {
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+      outline: 0;
+      border: none;
+    }
+  }
+
+  .buttons {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    .common {
+      width: 120px;
+      height: 40px;
+      background-color: #f8f9fa;
+      font-size: 14px;
+      color: #202124;
+      border: 0;
+      margin-left: 10px;
+
+      &:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+      }
+    }
+  }
+  .main-form {
+    position: relative;
+    #magnify {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      width: 25px;
+    }
+  }
+}
