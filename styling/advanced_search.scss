@@ -36,7 +36,7 @@ header {
   justify-content: space-between;
 
   .block {
-    width: 40vw;
+    max-width: 770px;
     padding: 15px 0;
     display: flex;
     align-items: center;
@@ -69,6 +69,13 @@ header {
     border: 1px solid #3079ed;
     color: #fff;
     background-color: #4d90fe;
-    margin-left: 32.2vw;
+    margin-left: 620px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  [type="submit"] {
+    display: float;
+    float: right;
   }
 }
